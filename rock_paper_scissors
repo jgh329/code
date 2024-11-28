@@ -1,0 +1,31 @@
+import random
+
+def 가위바위보():
+    선택지 = ['가위', '바위', '보']
+    컴퓨터 = random.choice(선택지)
+
+    사용자 = input("가위, 바위, 보 중 하나를 선택하세요: ")
+
+    if 사용자 not in 선택지:
+        print("잘못된 선택입니다. 다시 시도하세요.")
+        return
+
+    print(f"컴퓨터의 선택: {컴퓨터}")
+
+    if 사용자 == 컴퓨터:
+        print("비겼습니다!")
+    elif (사용자 == '가위' and 컴퓨터 == '보') or \
+         (사용자 == '바위' and 컴퓨터 == '가위') or \
+         (사용자 == '보' and 컴퓨터 == '바위'):
+        print("사용자가 이겼습니다!")
+    else:
+        print("컴퓨터가 이겼습니다!")
+
+가위바위보()
+echo "# 코드" >> README.md 
+git init 
+git add README.md 
+git commit -m "첫 번째 커밋" 
+git branch -M main 
+git remote add origin https://github.com/jgh329/code.git
+ git push -u origin main
