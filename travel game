@@ -1,0 +1,20 @@
+def 모험_게임():
+    print("당신은 숲에 있습니다. 왼쪽으로 가시겠습니까, 오른쪽으로 가시겠습니까?")
+    선택 = input("왼쪽/오른쪽: ")
+
+    if 선택 == "왼쪽":
+        print("늑대를 만났습니다! 도망쳐야 합니다!")
+    elif 선택 == "오른쪽":
+        print("보물을 찾았습니다! 축하합니다!")
+    else:
+        print("잘못된 선택입니다.")
+
+모험_게임()
+
+echo "# 코드" >> README.md 
+git init 
+git add README.md 
+git commit -m "첫 번째 커밋" 
+git branch -M main 
+git remote add origin https://github.com/jgh329/code.git
+ git push -u origin main
