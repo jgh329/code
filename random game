@@ -1,0 +1,25 @@
+import random
+
+def 주사위_게임():
+    print("주사위를 굴립니다...")
+    사용자_주사위 = random.randint(1, 6)
+    컴퓨터_주사위 = random.randint(1, 6)
+
+    print(f"사용자 주사위: {사용자_주사위}, 컴퓨터 주사위: {컴퓨터_주사위}")
+
+    if 사용자_주사위 > 컴퓨터_주사위:
+        print("사용자가 이겼습니다!")
+    elif 사용자_주사위 < 컴퓨터_주사위:
+        print("컴퓨터가 이겼습니다!")
+    else:
+        print("비겼습니다!")
+
+주사위_게임()
+
+echo "# 코드" >> README.md 
+git init 
+git add README.md 
+git commit -m "첫 번째 커밋" 
+git branch -M main 
+git remote add origin https://github.com/jgh329/code.git
+ git push -u origin main
