@@ -1,0 +1,32 @@
+import random
+
+def 숫자_맞추기_게임():
+    숫자 = random.randint(1, 100)  # 1부터 100 사이의 랜덤 숫자
+    기회 = 7  # 사용자에게 주어진 기회
+
+    print("1부터 100 사이의 숫자를 맞춰보세요! 총 7번의 기회가 주어집니다.")
+
+    while 기회 > 0:
+        추측 = int(input("숫자를 입력하세요: "))
+        기회 -= 1
+
+        if 추측 < 숫자:
+            print("더 큰 숫자입니다!")
+        elif 추측 > 숫자:
+            print("더 작은 숫자입니다!")
+        else:
+            print("축하합니다! 숫자를 맞췄습니다!")
+            break
+        
+        if 기회 == 0:
+            print(f"기회를 모두 사용하셨습니다. 정답은 {숫자}였습니다.")
+
+숫자_맞추기_게임()
+
+echo "# 코드" >> README.md 
+git init 
+git add README.md 
+git commit -m "첫 번째 커밋" 
+git branch -M main 
+git remote add origin https://github.com/jgh329/code.git
+ git push -u origin main
